@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: .75rem;
+    line-height: 1.5;
+    font-family: "inter", "Poppins", sans-serif;
+    background-color: white;
+
+
+}
+
+:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem orange;
+
+}
+
+.login_container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    max-width: 90%;
+    background-color: white;
+    display: grid;
+    grid: auto  1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+
+}
+.login {
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login_logo {
+    margin: 20px;
+    margin-bottom: 15px;
+    object-fit: cover;
+
+}
+.login_logo > img{
+    width: 200px;
+    
+}
+
+.login_container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction:column;
+    border-radius: 7px;
+    box-shadow: 0px 1px 2px 3px rgba(0,0,0,0.1);
+    border: 1px solid lightgrey;
+    padding: 15px;
+
+}
+
+.login_container > form > input{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    outline: none;
+    width: 98%;
+    border: 1px solid grey;
+
+
+}
